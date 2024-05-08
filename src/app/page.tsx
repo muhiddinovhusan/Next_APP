@@ -18,7 +18,7 @@ const page = () => {
     <option>Europe</option>
   </select>
 </div>
-<div className='grid grid-cols-4 px-16  mb-16 ml-10 max-sm:grid-cols-1   max-sm:px-5 max-md:grid-cols-3 max-lg:grid-cols-3  max-md:px-0 max-xl:px-0 max-lg:px-0  '>
+<div className='grid grid-cols-4 px-16  mb-16 ml-10 max-sm:grid-cols-1   max-sm:px-5 max-md:grid-cols-2 max-lg:grid-cols-3  max-md:px-0 max-xl:px-0 max-lg:px-0  '>
 <Link href='/details/1' className='w-[264px] rounded-md mb-3  bg-[#ffffff] shadow-sm shadow-gray-300 h-80 dark:bg-[#2b3844] dark:shadow-none'>
   
   <div className='mb-2 '>
