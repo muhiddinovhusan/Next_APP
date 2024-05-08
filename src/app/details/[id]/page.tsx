@@ -1,9 +1,14 @@
 import React from 'react'
 import germany from '../../../assets/images/flag-germany.svg'
+import Link from 'next/link'
 
 const page = () => {
   return (
     <div className='flex w-full  max-md:flex-col' >
+     <Link href="/">
+
+      <h2 className='ml-12'>back</h2>
+      <Link/>
 <div className='w-[50%]  max-md:w-full p-8 max-md:p-12'>
 <img className='w-full rounded-md' src={germany.src} alt="" />
 </div>
