@@ -8,8 +8,8 @@ import Link from 'next/link'
 const page = () => {
   return (
     <div className='mb-10  '>
-<div className='flex px-10 justify-between items-center gap-4 mb-10 '>
-  <input  placeholder='Search for a country...' className='dark:bg-[#2b3844] w-[400px] p-3 h-10 shadow-gray-300 dark:shadow-none rounded-sm outline-none shadow-sm placeholder:text-gray-300 placeholder:text-sm placeholder:font-sans placeholder:dark:text-white' type="text" name="" id="" />
+<div className='flex px-10 justify-between items-center gap-4 mb-14 max-md:flex-col '>
+  <input  placeholder='Search for a country...' className='dark:bg-[#2b3844] w-[400px] max-md:w-full p-3 h-10 shadow-gray-300 dark:shadow-none rounded-sm outline-none shadow-sm placeholder:text-gray-300 placeholder:text-sm placeholder:font-sans placeholder:dark:text-white' type="text" name="" id="" />
 
   <select className='h-10 w-44 rounded-sm dark:bg-[#2b3844] dark:shadow-none dark:text-white   shadow-gray-300  shadow-sm' name="" id="">
     <option>Filter by Region</option>
@@ -18,7 +18,7 @@ const page = () => {
     <option>Europe</option>
   </select>
 </div>
-<div className='grid grid-cols-4 px-16  mb-16 ml-10 max-sm:grid-cols-1  max-sm:px-14 max-md:grid-cols-2 max-lg:grid-cols-3  max-md:px-0 max-xl:px-0 max-lg:px-0 '>
+<div className='grid grid-cols-4 px-16  mb-16 ml-10 max-sm:grid-cols-1  max-sm:px-5 max-md:grid-cols-2 max-lg:grid-cols-3  max-md:px-0 max-xl:px-0 max-lg:px-0 '>
 <Link href='/details/1' className='w-[264px] rounded-md mb-3  bg-[#ffffff] shadow-sm shadow-gray-300 h-80 dark:bg-[#2b3844] dark:shadow-none'>
   
   <div className='mb-2 '>
@@ -80,7 +80,7 @@ const page = () => {
   </div>
 </Link>
 </div>
-<div className='grid grid-cols-4 px-16  ml-10 max-sm:grid-cols-1 max-md:grid-cols-2 max-sm:px-14 max-lg:grid-cols-3 max-md:px-0 max-xl:px-0 max-lg:px-0 '>
+<div className='grid grid-cols-4 px-16  ml-10 max-sm:grid-cols-1 max-md:grid-cols-2 max-sm:px-3 max-lg:grid-cols-3 max-md:px-0 max-xl:px-0 max-lg:px-0 '>
 <Link href="/details/5" className='w-[264px] mb-2 rounded-md  bg-[#ffffff] shadow-sm shadow-gray-300 h-80 dark:bg-[#2b3844] dark:shadow-none'>
   
   <div className='mb-2 '>
