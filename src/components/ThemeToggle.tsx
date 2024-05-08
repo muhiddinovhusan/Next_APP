@@ -9,7 +9,7 @@ import { FaMoon } from "react-icons/fa";
 
 
 const ThemeToggle = () => {
-    const [darkMode, setDarkMode]= useState(true);
+    const [darkMode, setDarkMode]= useState(false);
 useEffect(()=>{
     const theme = localStorage.getItem("theme");
     if(theme === "dark")setDarkMode(true)

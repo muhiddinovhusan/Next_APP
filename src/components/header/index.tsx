@@ -9,8 +9,9 @@ const Header = () => {
             <h3 className='text-[#000] pl-10 text-xl font-semibold dark:text-white'>Where in the world?</h3>
             <div className='flex gap-2 items-center justify-center'>
                 <ThemeToggle />
-                Dark Mode
-
+<h1 className='text-black dark:text-white text-md'>
+    Dark Mode
+</h1>
             </div>
         </div>
     )

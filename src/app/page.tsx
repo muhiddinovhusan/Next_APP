@@ -2,6 +2,7 @@ import usa from '../assets/images/flag-usa.svg'
 import germany from '../assets/images/flag-germany.svg'
 import brazil from '../assets/images/1280px-Flag_of_Germany.svg.svg'
 import island from '../assets/images/1280px-Flag_of_any.svg.svg'
+import Link from 'next/link'
 
 
 const page = () => {
@@ -18,7 +19,7 @@ const page = () => {
   </select>
 </div>
 <div className='grid grid-cols-4 px-16  mb-16 ml-10 max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-3 max-md:px-0 max-xl:px-0 max-lg:px-0 '>
-<div className='w-[264px] rounded-md  bg-[#ffffff] shadow-sm shadow-gray-300 h-80 dark:bg-[#2b3844] dark:shadow-none'>
+<Link href='/details/1' className='w-[264px] rounded-md  bg-[#ffffff] shadow-sm shadow-gray-300 h-80 dark:bg-[#2b3844] dark:shadow-none'>
   
   <div className='mb-2 '>
 <img src={germany.src} alt="" />
@@ -32,8 +33,9 @@ const page = () => {
   <div>
 
   </div>
-</div>
-<div className='w-[264px]  rounded-md bg-[#ffffff] shadow-sm shadow-gray-300 h-80 dark:bg-[#2b3844] dark:shadow-none'>
+</Link>
+
+<Link href="/details/2" className='w-[264px]  rounded-md bg-[#ffffff] shadow-sm shadow-gray-300 h-80 dark:bg-[#2b3844] dark:shadow-none'>
    
   <div className='mb-2'>
 <img src={usa.src} alt="" />
@@ -47,8 +49,8 @@ const page = () => {
   <div>
 
   </div>
-</div > 
-<div className='w-[264px] rounded-md bg-[#ffffff] shadow-sm shadow-gray-300 h-80 dark:bg-[#2b3844] dark:shadow-none'>
+</Link > 
+<Link href="/details/3" className='w-[264px] rounded-md bg-[#ffffff] shadow-sm shadow-gray-300 h-80 dark:bg-[#2b3844] dark:shadow-none'>
    
   <div className='mb-2'>
 <img src={brazil.src} alt="" />
@@ -62,8 +64,8 @@ const page = () => {
   <div>
 
   </div>
-</div> 
-<div className='w-[264px] rounded-md bg-[#ffffff] shadow-sm dark:bg-[#2b3844] dark:shadow-none shadow-gray-300 h-80'>
+</Link> 
+<Link href="/details/4" className='w-[264px] rounded-md bg-[#ffffff] shadow-sm dark:bg-[#2b3844] dark:shadow-none shadow-gray-300 h-80'>
    <div className='mb-2'>
 <img src={island.src} alt="" />
   </div>
@@ -76,10 +78,10 @@ const page = () => {
   <div>
 
   </div>
-</div>
+</Link>
 </div>
 <div className='grid grid-cols-4 px-16  ml-10 max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-3 max-md:px-0 max-xl:px-0 max-lg:px-0 '>
-<div className='w-[264px] rounded-md  bg-[#ffffff] shadow-sm shadow-gray-300 h-80 dark:bg-[#2b3844] dark:shadow-none'>
+<Link href="/details/5" className='w-[264px] rounded-md  bg-[#ffffff] shadow-sm shadow-gray-300 h-80 dark:bg-[#2b3844] dark:shadow-none'>
   
   <div className='mb-2 '>
 <img src={germany.src} alt="" />
@@ -93,8 +95,8 @@ const page = () => {
   <div>
 
   </div>
-</div>
-<div className='w-[264px]  rounded-md bg-[#ffffff] shadow-sm shadow-gray-300 h-80 dark:bg-[#2b3844] dark:shadow-none'>
+</Link>
+<Link href="/details/6" className='w-[264px]  rounded-md bg-[#ffffff] shadow-sm shadow-gray-300 h-80 dark:bg-[#2b3844] dark:shadow-none'>
    
   <div className='mb-2'>
 <img src={usa.src} alt="" />
@@ -108,8 +110,8 @@ const page = () => {
   <div>
 
   </div>
-</div > 
-<div className='w-[264px] rounded-md bg-[#ffffff] shadow-sm shadow-gray-300 h-80 dark:bg-[#2b3844] dark:shadow-none'>
+</Link > 
+<Link href="/details/7" className='w-[264px] rounded-md bg-[#ffffff] shadow-sm shadow-gray-300 h-80 dark:bg-[#2b3844] dark:shadow-none'>
    
   <div className='mb-2'>
 <img src={brazil.src} alt="" />
@@ -123,8 +125,8 @@ const page = () => {
   <div>
 
   </div>
-</div> 
-<div className='w-[264px] rounded-md bg-[#ffffff] shadow-sm dark:bg-[#2b3844] dark:shadow-none shadow-gray-300 h-80'>
+</Link> 
+<Link href="/details/8" className='w-[264px] rounded-md bg-[#ffffff] shadow-sm dark:bg-[#2b3844] dark:shadow-none shadow-gray-300 h-80'>
    <div className='mb-2'>
 <img src={island.src} alt="" />
   </div>
@@ -137,7 +139,7 @@ const page = () => {
   <div>
 
   </div>
-</div>
+</Link>
 </div>
 
     </div>
