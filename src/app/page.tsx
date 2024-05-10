@@ -86,7 +86,7 @@ const page = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
 
-        <select className='h-10 w-44 rounded-sm dark:bg-[#2b3844] dark:shadow-none dark:text-white   shadow-gray-300  shadow-sm' name="" id=""
+        <select className='h-10 w-44 rounded-sm dark:bg-[#2b3844]  dark:shadow-none dark:text-white   shadow-gray-300  shadow-sm' name="" id=""
        value={filter} onChange={handleFilterChange}
         >
           <option value="All">Filtered by Region</option>

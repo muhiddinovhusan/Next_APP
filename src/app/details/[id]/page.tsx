@@ -5,12 +5,32 @@ import Link from 'next/link'
 import axios from 'axios';
 import { useRouter } from 'next/router';
 
+interface Country {
+  name: {
+      common: string;
+      official: string;
+  };
+  population: number;
+  region: string;
+  capital: string;
+  flags: {
+      svg: string;
+  };
+  tld: string[];
+  area: number,
+  languages: {
+      ron: string;
+  };
+  borders: string[];
+  independent: boolean;
+}
+
 const page = ({ params: { id } }: {
   params: { id: string }
 }) => {
   console.log(id)
 
-  const [countryData, setCountryData] = useState([] || null);
+  const [countryData, setCountryData] = useState<Country[]>([] || null);
   console.log(countryData)
   useEffect(() => {
     const fetchCountryData = async () => {
@@ -38,7 +58,7 @@ const page = ({ params: { id } }: {
       <div className='grid grid-cols-2  max-lg:w-full max-md:grid-cols-1 px-12 mt-16 max-lg:px-24  max-lg:-mt-2  max-md:mt-0 max-xl:mt-10 w-1/2 '>
 
         <div className='  '>
-        <p className="font-light max-md:text-[15px]  text-md max-xl:text-lg  dark:text-white"><span className="max-md:text-[15px]  dark:text-white font-medium mr-2 text-md max-xl:text-lg dark:text-white">Native Name:</span>{countryData.name?.official}</p>
+        <p className="font-light max-md:text-[15px]  text-md max-xl:text-lg  dark:text-white"><span className="max-md:text-[15px]  font-medium mr-2 text-md max-xl:text-lg dark:text-white">Native Name:</span>{countryData.name?.official}</p>
         <p className="font-light max-md:text-[15px] text-md max-xl:text-lg  dark:text-white"><span className="font-medium mr-2  dark:text-white text-md max-xl:text-lg max-md:text-[15px]">Population:</span>{countryData.population}</p>
         <p className="font-light max-md:text-[15px] text-md max-xl:text-lg  dark:text-white"><span className="font-medium mr-2  dark:text-white text-md max-xl:text-lg max-md:text-[15px]">Region:</span>{countryData.region}</p>
         <p className="font-light max-md:text-[15px] text-md max-xl:text-lg  dark:text-white"><span className="font-medium mr-2  dark:text-white text-md max-xl:text-lg max-md:text-[15px]">Sub Region:</span>{countryData.subregion}</p>
