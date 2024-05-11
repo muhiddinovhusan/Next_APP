@@ -101,9 +101,9 @@ const page = () => {
         {
           currentItems.map((country: Countries) => (
             <Link href={`/details/${country.name.common}`} key={country.name.common} className='w-full  min-[1200px]:w-[266px] max-lg:h-[345px]  max-sm:w-[280px] rounded-lg mb-5  bg-[#ffffff] shadow-sm shadow-gray-300 h-80 dark:bg-[#2b3844] dark:shadow-none'>
-              <div className='mb-2'>
+              <div className='mb-2 w-full h-[200px] max-md:h-[150px] max-lg:h-[170px]  max-sm:h-[130px]'>
 
-                <img src={country.flags.svg} alt="" className="w-full rounded-t-lg max-md:h-44  " />
+                <img src={country.flags.svg} alt="" className="w-full h-full object-cover rounded-t-lg   " />
               </div>
 
               <div className="p-4 pl-5 ">
