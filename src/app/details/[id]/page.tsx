@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useState } from 'react'
 import germany from '../../../assets/images/flag-germany.svg'
 import Link from 'next/link'
@@ -72,7 +73,7 @@ const page = ({ params: { id } }: {
           <p className="font-light max-md:text-[15px] text-md max-xl:text-lg  dark:text-white"><span className="font-medium mr-2 text-md max-xl:text-lg  dark:text-white max-md:text-[15px]">Top Level Domain :</span>{countryData?.tld?.join(', ')} </p>
 
           <p className="font-light max-md:text-[15px] text-md  dark:text-white max-xl:text-lg"><span className="font-medium  dark:text-white mr-2 text-md max-xl:text-lg max-md:text-[15px]">Currencies:</span>{countryData?.currencies?.EUR?.name} {countryData?.currencies?.EUR?.symbol}</p>
-          <h2 className='mb-2 max-md:text-[15px] dark:text-white'> Languages : {countryData?.languages ? Object.keys(countryData.languages).join(', ') : 'Not available'}</h2>
+          <h2 className='mb-2 max-md:text-[15px] dark:text-white text-md max-xl:text-lg'> Languages : {countryData?.languages ? Object.keys(countryData.languages).join(', ') : 'Not available'}</h2>
           <p className="font-light max-md:text-[15px] text-md  dark:text-white max-xl:text-lg"><span className="font-medium  dark:text-white mr-2 text-md max-xl:text-lg max-md:text-[15px]">Independent:</span>{countryData?.independent ? "true" : "false"} </p>
         </div>
       </div>

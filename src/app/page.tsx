@@ -97,11 +97,11 @@ const page = () => {
           <option value="Oceania">Oceania</option>
         </select>
       </div>
-      <div className='grid grid-cols-4 px-16  mb-16 ml-10 max-sm:grid-cols-1 max-md:pr-10 max-md:gap-5   max-sm:px-5 max-md:grid-cols-2 gap-3 max-lg:grid-cols-3 max-lg:pr-8 max-lg:gap-5   max-md:px-0 max-xl:px-0 max-lg:px-0  '>
+      <div className='grid grid-cols-4 px-16   mb-16 ml-10 max-sm:grid-cols-1 max-md:pr-10 max-md:gap-5   max-sm:px-5 max-md:grid-cols-2 gap-3 max-lg:grid-cols-3 max-lg:pr-8 max-lg:gap-5   max-md:px-0 max-xl:px-0 max-lg:px-0  '>
         {
           currentItems.map((country: Countries) => (
             <Link href={`/details/${country.name.common}`} key={country.name.common} className='w-full  min-[1200px]:w-[266px] max-lg:h-[345px]  max-sm:w-[280px] rounded-lg mb-5  bg-[#ffffff] shadow-sm shadow-gray-300 h-80 dark:bg-[#2b3844] dark:shadow-none'>
-              <div className='mb-2 w-full h-[200px] max-md:h-[150px] max-lg:h-[170px]  max-sm:h-[130px]'>
+              <div className='mb-2 w-full h-[180px] max-md:h-[150px]  max-lg:h-[170px]  max-sm:h-[130px]'>
 
                 <img src={country.flags.svg} alt="" className="w-full h-full object-cover rounded-t-lg   " />
               </div>
