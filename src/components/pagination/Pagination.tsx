@@ -2,7 +2,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange } : {
     currentPage:number , totalPages : number, onPageChange:any
 }) => {
     return (
-      <div className="flex  mt-10 overflow-hidden">
+      <div className="flex  justify-center mt-10 overflow-hidden">
         <nav>
           <ul className="flex  gap-4 ">
             {Array.from({ length: totalPages }, (_, index) => (
