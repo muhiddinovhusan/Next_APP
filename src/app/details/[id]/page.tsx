@@ -54,7 +54,7 @@ const page = ({ params: { id } }: {
   return (
     <div className='flex w-full max-lg:flex-col  max-md:flex-col' >
       <Link href='/'>
-        <h2 className='ml-12'>back</h2>
+        <h2 className='ml-12 dark:text-white'>back</h2>
       </Link>
       <div className='w-[50%] max-lg:p-28 max-md:w-full  max-lg:w-full p-8 max-md:p-12'>
         <img className='w-full h-full rounded-md' src={countryData?.flags?.svg} alt="" />
@@ -77,9 +77,7 @@ const page = ({ params: { id } }: {
           <p className="font-light max-md:text-[15px] text-md  dark:text-white max-xl:text-lg"><span className="font-medium  dark:text-white mr-2 text-md max-xl:text-lg max-md:text-[15px]">Independent:</span>{countryData?.independent ? "true" : "false"} </p>
         </div>
       </div>
-      <div>
-        border
-      </div>
+  
 
     </div>
   )
